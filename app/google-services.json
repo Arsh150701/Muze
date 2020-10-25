@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1075110703376",
+    "firebase_url": "https://muze-99.firebaseio.com",
+    "project_id": "muze-99",
+    "storage_bucket": "muze-99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075110703376:android:0b3f9e2e038263a49db595",
+        "android_client_info": {
+          "package_name": "com.mussu.muze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075110703376-3ju6rm3s2t6rvh91it7ag4njfa4rgmn4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mussu.muze",
+            "certificate_hash": "8c735c94ff6a0699618f3129ad028d8befa4e847"
+          }
+        },
+        {
+          "client_id": "1075110703376-fa7v659o5mfofa398h3q3hautio6i461.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBijOKJzUPI-4WSpA6fv2skbAgP_dndMNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075110703376-fa7v659o5mfofa398h3q3hautio6i461.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
