@@ -1,4 +1,4 @@
-package com.sdp.remotehealthcareapp.Activities;
+package com.mussu.muze;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.sdp.remotehealthcareapp.R;
+import com.mussu.muze.R;
 
 public class Splash extends AppCompatActivity {
     @Override
@@ -21,7 +21,7 @@ public class Splash extends AppCompatActivity {
         FirebaseUser user= FirebaseAuth.getInstance().getCurrentUser();
         //boolean loggedin= getsave.getBoolean("isLoggedin", false);
         if(user==null)
-            startActivity(new Intent(this, Intro_Signin.class));
+            startActivity(new Intent(this, Signin.class));
         else
             startActivity(new Intent(this, MainActivity.class));
         onBackPressed();
