@@ -160,7 +160,7 @@ public class PhoneAuthActivity extends AppCompatActivity {
                 if (e instanceof FirebaseAuthInvalidCredentialsException) {
                     // Invalid request
                     // ...
-                    Toast.makeText(PhoneAuthActivity.this, "phone number is not linked to any account", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(PhoneAuthActivity.this, "Please add +91 to your phone number and try again or verify phone number", Toast.LENGTH_SHORT).show();
                 } else if (e instanceof FirebaseTooManyRequestsException) {
                     // The SMS quota for the project has been exceeded
                     // ...
@@ -188,60 +188,6 @@ public class PhoneAuthActivity extends AppCompatActivity {
 
     }
 
-//        startPhoneNumberVerification(phoneNumber.getText().toString());
-
-/*
-        //To test using whitelisted numbers
-        // The test phone number and code should be whitelisted in the console.
-        String phoneNumber = "+15555555555";
-        String smsCode = "123456";
-
-        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-        FirebaseAuthSettings firebaseAuthSettings = firebaseAuth.getFirebaseAuthSettings();
-
-        // Configure faking the auto-retrieval with the whitelisted numbers.
-        firebaseAuthSettings.setAutoRetrievedSmsCodeForPhoneNumber(phoneNumber, smsCode);
-
-        PhoneAuthProvider phoneAuthProvider = PhoneAuthProvider.getInstance();
-        phoneAuthProvider.verifyPhoneNumber(
-                phoneNumber,
-                60L,
-                TimeUnit.SECONDS,
-                this, // activity
-                new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
-                    @Override
-                    public void onVerificationCompleted(PhoneAuthCredential credential) {
-                        // Instant verification is applied and a credential is directly returned.
-                        // ...
-                        Log.d(TAG, "onVerificationCompleted:" + credential);
-                        Toast.makeText(PhoneAuthActivity.this, "Verified! Login successful", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                        signInWithPhoneAuthCredential(credential);
-                    }
-
-                    @Override
-                    public void onVerificationFailed(FirebaseException e) {
-                        // This callback is invoked in an invalid request for verification is made,
-                        // for instance if the the phone number format is not valid.
-                        Log.w(TAG, "onVerificationFailed", e);
-
-                        if (e instanceof FirebaseAuthInvalidCredentialsException) {
-                            // Invalid request
-                            // ...
-                            Toast.makeText(PhoneAuthActivity.this, "phone number is not linked to any account", Toast.LENGTH_SHORT).show();
-                        } else if (e instanceof FirebaseTooManyRequestsException) {
-                            // The SMS quota for the project has been exceeded
-                            // ...
-                            Toast.makeText(PhoneAuthActivity.this, "Server overload... could not verify", Toast.LENGTH_SHORT).show();
-                        }
-
-                        // Show a message and update the UI
-                        // ...
-                        //Toast.makeText(this, "Verification failed", Toast.LENGTH_SHORT).show();
-                    }
-                    // ...
-                });
-*/
 
 
 
@@ -284,7 +230,7 @@ public class PhoneAuthActivity extends AppCompatActivity {
                 if (e instanceof FirebaseAuthInvalidCredentialsException) {
                     // Invalid request
                     // ...
-                    Toast.makeText(PhoneAuthActivity.this, "phone number is not linked to any account", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(PhoneAuthActivity.this, "Please add +91 to your phone number and try again or verify phone number", Toast.LENGTH_SHORT).show();
                 } else if (e instanceof FirebaseTooManyRequestsException) {
                     // The SMS quota for the project has been exceeded
                     // ...
