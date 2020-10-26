@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="20dp"
-            android:layout_weight="0.25"
+            android:layout_weight="0.3"
             android:hint="@string/name" />
 
         <Button
@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:text="@string/register"
             android:id="@+id/button_register"
-            android:layout_weight="0.25"
+            android:layout_weight="0.2"
             android:layout_marginStart="@dimen/button_horizontal_margin"
             android:layout_marginEnd="@dimen/button_horizontal_margin"
             >
@@ -127,6 +127,8 @@
                     android:layout_marginStart="@dimen/button_horizontal_margin"
                     android:layout_marginEnd="@dimen/button_horizontal_margin"
                     android:layout_weight="1.0"
+                    android:background="@color/eerieBlack"
+                    android:textColor="@color/coralOrange"
                     android:text="@string/start_phone_auth" />
 
                 <Button
@@ -136,6 +138,8 @@
                     android:layout_marginStart="@dimen/button_horizontal_margin"
                     android:layout_marginEnd="@dimen/button_horizontal_margin"
                     android:layout_weight="1.0"
+                    android:background="@color/eerieBlack"
+                    android:textColor="@color/coralOrange"
                     android:text="@string/verify_phone_auth" />
 
                 <Button
@@ -145,6 +149,8 @@
                     android:layout_marginStart="@dimen/button_horizontal_margin"
                     android:layout_marginEnd="@dimen/button_horizontal_margin"
                     android:layout_weight="1.0"
+                    android:background="@color/eerieBlack"
+                    android:textColor="@color/coralOrange"
                     android:text="@string/resend_phone_auth" />
             </LinearLayout>
 

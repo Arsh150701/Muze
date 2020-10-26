@@ -56,22 +56,16 @@ public class Signin extends AppCompatActivity {
         sharedPreferences= getSharedPreferences(getString(R.string.preference_file_name_login), Context.MODE_PRIVATE);
         isloggedin= sharedPreferences.getBoolean("isLoggedin",false);
 
+
         createRequest();
         findViewById(R.id.google_signin).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 signOut();
                 signIn();
             }
         });
-//        findViewById(R.id.email).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), signup.class);
-//                startActivity(intent);
-//            }
-//        });
+
         findViewById(R.id.phone_login_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -112,7 +106,7 @@ public class Signin extends AppCompatActivity {
            savepreference_signout();
        }
         //FirebaseAuth.getInstance().signOut();
-
+        return;
     }
 
     public void savepreference_signin()
