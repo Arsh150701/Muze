@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://github.com/devanshagar783/Summer-Design-Project/blob/master/app/src/main/res/mipmap-hdpi/hygeia_icon.png" alt="Project logo"></a>
+ <img width=200px height=200px src="https://github.com/Arsh150701/Muze-java-beta/blob/main/app/src/main/res/mipmap-hdpi/muze_icon.png" alt="Project logo"></a>
 </p>
 <h3 align="center">Muze</h3>
 
